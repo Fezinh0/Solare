@@ -1,0 +1,171 @@
+:root {
+	--cinzaDark: darkgrey;
+	--cinza: #373737;
+	--branco: #fff;
+	--black: #000;
+}
+
+* {
+	margin: 0 auto;
+	font-family: "Noto Sans", sans-serif;
+	;
+}
+
+
+/* ----- Header ----- */
+.cabecalho {
+	height: 9rem;
+	background: var(--cinzaDark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logotipo {
+	width: 80%;
+}
+
+/* Menu da página */
+nav > ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	list-style: none;
+	font-weight: 600;
+	color: var(--black);
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--cinza);
+	padding: 0.5rem;
+	border-radius: 0.2rem;
+
+}
+
+nav a:hover {
+	background-color: var(--branco);
+	transition: 1.5s;
+	z-index: 300;
+	border-radius: 0.2rem;
+}
+
+/* Conteudo das páginas */
+
+img {
+	width: 24rem;
+	border-radius: 0.2rem;
+	margin: 15px 0 0 0;
+}
+
+img:hover {
+	filter: blur(0.2rem);
+	transition: 0.5s;
+}
+
+#fundo {
+	gap: 2rem;
+	margin: 30px 0 50px 0;
+	height: auto;
+}
+
+.cont-section {
+	margin: 15px;
+}
+
+.tituloS {
+	text-align: center;
+	font-size: 14pt;
+	font-weight: 600;
+	margin: 15px;
+}
+
+.subtituloS {
+	font-weight: 600;
+	font-size: 11pt;
+	margin: 10px 10px 0 0;
+}
+
+.comp {
+	text-align: justify;
+	margin: 0 10px 0 10px;
+	border-bottom: solid 0.1rem;
+}
+.imagem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p {
+	margin: 15px;
+	font-size: medium;
+	line-height: 1.3rem;
+	text-align: justify;
+}
+
+
+/* ----- Footer ----- */
+.subfooter {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	gap: 0.5rem;
+	width: 100%;
+	height: 18rem;
+	background: var(--cinzaDark);
+}
+
+.infos {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: justify;
+	font-size: small;
+	margin: 0px 0px 0px 10px;
+}
+
+.Inc {
+	width: 35%;
+}
+
+.navFooter>ul {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	gap: 10px;
+	list-style: none;
+	font-size: small;
+}
+
+.navFooter>ul>li a:hover {
+	color: var(--branco);
+	background: none;
+}
+
+.assinaturaPag {
+	margin: 20px 0 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+
+@media(min-width: 699px) {
+	
+	#fundo{
+		width: 100%;
+		
+		
+	}
+
+	.WR {
+		display: flex; 
+		flex-flow: nowrap;
+		gap: 15px;
+		margin: 30px;
+	}
+}
